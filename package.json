@@ -10,7 +10,10 @@
   "dependencies": {
     "react": "16.8.6",
     "react-native": "^0.60.4",
-    "react-native-vector-icons": "6.4.2"
+    "react-native-fbsdk": "^1.0.1",
+    "react-native-instagram-login": "^1.1.1",
+    "react-native-vector-icons": "6.4.2",
+    "react-native-webview": "^6.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
