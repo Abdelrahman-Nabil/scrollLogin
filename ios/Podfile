@@ -33,6 +33,11 @@ target 'sociallogin' do
 
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
+
+  pod 'react-native-login-twitter', :path => '../node_modules/react-native-login-twitter'
+
+  pod 'react-native-twitter-signin', :path => '../node_modules/react-native-twitter-signin'
+
   target 'socialloginTests' do
     inherit! :search_paths
     # Pods for testing

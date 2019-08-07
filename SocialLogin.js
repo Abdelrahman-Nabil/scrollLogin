@@ -3,6 +3,7 @@ import { View, ImageBackground, Dimensions } from 'react-native'
 import Button from './components/Button'
 import { LoginButton, AccessToken } from 'react-native-fbsdk';
 import InstagramLogin from 'react-native-instagram-login'
+import TwitterButton from './components/TwitterButton';
 
 export default class SocialLogin extends Component {
 
@@ -21,7 +22,6 @@ export default class SocialLogin extends Component {
                onLoginFailure={(data) => console.log(data)}
            />
 
-          <Button text = "Login with Twitter" name = 'twitter' size = {18} color = '#fff' backgroundColor = '#1DA1F2'/>
 
           <Button onPress = {() => this.instagramLogin.show()} text = "Login with Instagram" name = 'instagram' size = {18} color = '#fff' backgroundColor = '#3f729b'/>
 
@@ -45,6 +45,8 @@ export default class SocialLogin extends Component {
               readPermissions = {['email']}
               onLogoutFinished={() => console.log("logout success.")}
           />
+          <TwitterButton style={{ marginTop: 10, height: 50 }} />
+
         </View>
 
       </View>
